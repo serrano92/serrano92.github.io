@@ -207,7 +207,7 @@ export class Game{
                 this.keys.down = false;
             }
         });
-        window.addEventListener("click",()=>{
+        window.addEventListener("dblclick",()=>{
             if(!this.gameOver){
                 this.dropBlock();
             }

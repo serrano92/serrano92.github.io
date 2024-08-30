@@ -9,7 +9,9 @@ const btnMenu = document.getElementById("btn-start");
 
 let sound = new Audio('tono.mp3');
 playBtn.addEventListener('click', ()=>{
-    sound.play();
+    setInterval(() => {
+        sound.play();
+    }, 5000);
 });
 pauseBtn.addEventListener('click', ()=>{
     sound.pause();
